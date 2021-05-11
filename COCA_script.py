@@ -62,7 +62,8 @@ for l in corpus:
                                         of = wj
                                         if of != None:
                                             for x in of.children:
-                                                #tag hits with a possessive in the NP complement to 'of' 
+                                                #tag hits with a possessive in the NP complement to 'of' because this particular syntax
+                                                #was found to yield false positives in a pilot study
                                                 if x.dep_ == 'pobj':
                                                     pobj = x
                                                     for y in pobj.children:
@@ -90,13 +91,13 @@ for l in corpus:
                                         if of != None:
                                             clear_of.append(sentence)
                                 for wk in w.children:
-                                    #append from/off hits to a separate
+                                    #append from/off hits to a separate list
                                     if wk.dep_ == 'prep' and wk.lemma_ in P:
                                         prep = wk
                                         if prep != None:
                                             clear_from.append(sentence)
                                             
-#write all wipe-class hits to file, along with the number for total of-hits and from/off hits
+#write all wipe-class hits to file, along with the number of total of-hits and from/off hits
 hits_file = open('hits_file.txt', 'w')
 hits_file.write('wipe of-hits = ' + str(len(wipe_of)))
 for x in wipe_of:
@@ -105,7 +106,7 @@ hits_file.write('\n\n\n\n' + 'wipe from-hits = ' + str(len(wipe_from)))
 for x in wipe_from:
     hits_file.write ('\n\n' + str(x))
     
-#write all clear-class hits to same file, along with number for hits    
+#write all clear-class hits to same file, along with number of hits    
 hits_file.write('\n\n\n\n\n\n' + 'clear of-hits = ' + str(len(clear_of)))
 for y in clear_of:
     hits_file.write('\n\n' + str(y))
