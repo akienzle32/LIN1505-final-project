@@ -5,4 +5,4 @@ This was my final project for a computational linguistics class (LIN1505) that I
 (1) Henry cleared all the dishes from the table.  
 (2) Henry cleared the table of all the dishes.
 
-Ensuring that the program only extracted sentences with the right syntax was the main hurdle to be overcome in writing this script, but in the end the program worked nicely. If you'd like to read a more detailed description of the motivation behind the project, please see the abstract included in this repository. 
+Ensuring that the program only extracted sentences with the right syntax was the main hurdle to overcome in writing this script. As this was the first program of more than 10 or so lines that I had written, it's possible that it could be made more elegant (and conform more to coding conventions). But in the end the program worked nicely, and because of time constraints my main goal was functionality. If you'd like to read a more detailed description of the motivation behind the project, please see the abstract included in this repository. 
