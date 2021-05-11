@@ -12,7 +12,7 @@ def read_coca_file(filename):
             sentence = []
     return sentences
 
-filename = #change to your filename (my professor Barend was the only one with access to the COCA files
+filename = #change to your filename (my professor Barend was the only one with access to the COCA files,
             #so we ran the script on his computer)
 
 corpus = read_coca_file(filename)
