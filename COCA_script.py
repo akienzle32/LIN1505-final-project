@@ -12,8 +12,8 @@ def read_coca_file(filename):
             sentence = []
     return sentences
 
-filename = #change to your filename (my professor Barend was the only one with access to the COCA files,
-           #so we ran the script on his computer)
+filename = #change to your filename
+           #The COCA files are behind a paywall, so for the project itself, I actually ran the script on my professor's computer, which already had access to these.
 
 corpus = read_coca_file(filename)
 
@@ -63,7 +63,7 @@ for l in corpus:
                                         of = wj
                                         if of != None:
                                             for x in of.children:
-                                                #tag hits with a possessive in the NP complement to 'of' because this particular syntax
+                                                #tag hits with a possessive determiner in the NP complement to 'of' because this particular syntax
                                                 #was found to yield false positives in a pilot study
                                                 if x.dep_ == 'pobj':
                                                     pobj = x
