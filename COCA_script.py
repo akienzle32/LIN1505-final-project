@@ -45,10 +45,10 @@ for l in corpus:
     if verb_found == False:
         continue
     else:
-        #extract wipe-class hits
         for sentence in nlp(l).sents:
             for w in sentence:
                 tag = ''
+                #extract wipe-class hits
                 if w.pos_ == 'VERB' and w.lemma_ in wipe_class:
                     for wi in w.children:
                         if wi.dep_ == 'prt':
@@ -77,6 +77,7 @@ for l in corpus:
                                         prep = wk
                                         if prep != None:
                                             wipe_from.append(sentence)
+                #extract clear-class hits
                 if w.pos_ == 'VERB' and w.lemma_ in clear_class:
                     for wi in w.children:
                         if wi.dep_ == 'prt':
