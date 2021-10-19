@@ -1,6 +1,6 @@
 # LIN1505-final-project
 
-This was my final project for a computational linguistics class (LIN1505) that I took in Fall 2019 at the University of Toronto, taught by Barend Beekhuizen. Put very simply, the program, written in Python and employing the spaCy dependency parser, extracts sentences featuring verbs of particular lexical classes in a syntactic context of interest from the Corpus of Contemporary American English and writes them out to a .txt file. For the project, I was interested in the syntactic alternation seen in (1)-(2). 
+This was my final project for a computational linguistics class (LIN1505) that I took in Fall 2019 at the University of Toronto, taught by Barend Beekhuizen. Put very simply, the program, written in Python and employing the spaCy dependency parser, extracts sentences featuring verbs of particular lexical classes in a particular syntactic context from the Corpus of Contemporary American English and writes them out to a .txt file. For the project, I was interested in the syntactic alternation seen in (1)-(2). 
 
 (1) Henry cleared all the dishes from the table.  
 (2) Henry cleared the table of all the dishes.
