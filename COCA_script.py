@@ -103,16 +103,16 @@ for l in corpus:
 hits_file = open('hits_file.txt', 'w')
 hits_file.write('wipe of-hits = ' + str(len(wipe_of)))
 for hit in wipe_of:
-    hits_file.write('\n\n' + str(x))
+    hits_file.write('\n\n' + str(hit))
 hits_file.write('\n\n\n\n' + 'wipe from-hits = ' + str(len(wipe_from)))
 for hit in wipe_from:
-    hits_file.write ('\n\n' + str(x))
+    hits_file.write ('\n\n' + str(hit))
     
 #write all clear-class hits to same file, along with number of hits    
 hits_file.write('\n\n\n\n\n\n' + 'clear of-hits = ' + str(len(clear_of)))
 for hit in clear_of:
-    hits_file.write('\n\n' + str(y))
+    hits_file.write('\n\n' + str(hit))
 hits_file.write('\n\n\n\n' + 'clear from-hits = ' + str(len(clear_from)))
 for hit in clear_from:
-    hits_file.write('\n\n' + str(y))
+    hits_file.write('\n\n' + str(hit))
 hits_file.close()
